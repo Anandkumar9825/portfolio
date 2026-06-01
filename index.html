@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anand Yadav Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-premium.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Anand Yadav</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Anand Yadav</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+							'Computer Applications Postgrad  ',
+							'Full-Stack Web Developer  ',
+							'Software Engineering Enthusiast  ',
+							'Creative Problem Solver  '
+						];
+
+						let textIndex = 0;
+						let charIndex = 0;
+						let isDeleting = false;
+						let typingSpeed = 100;
+
+						function type() {
+							const currentText = typingTexts[textIndex];
+							
+							if (isDeleting) {
+								typingAnimationElement.textContent = currentText.substring(0, charIndex - 1);
+								charIndex--;
+								typingSpeed = 50; // Faster deleting
+							} else {
+								typingAnimationElement.textContent = currentText.substring(0, charIndex + 1);
+								charIndex++;
+								typingSpeed = 100; // Normal typing
+							}
+
+							if (!isDeleting && charIndex === currentText.length) {
+								isDeleting = true;
+								typingSpeed = 1500; // Pause at full word
+							} else if (isDeleting && charIndex === 0) {
+								isDeleting = false;
+								textIndex = (textIndex + 1) % typingTexts.length;
+								typingSpeed = 500; // Pause before next word
+							}
+
+							setTimeout(type, typingSpeed);
+						}
+
+						// Start the typing animation loop
+						document.addEventListener('DOMContentLoaded', () => {
+							setTimeout(type, 1000);
+						});
+						</script>
+
+						<br>
+						<br>
+			            <h6>Graduate Student in Computer Applications |</h6><h6> Focused on Programming & Problem Solving</h6><br>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<br>
+						<p><a href="media/Anand Yadav CV.pdf" class="btn btn-primary py-3 px-4">My Resume</a> 
+							<a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4">Contact Me</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me1.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Anand Yadav</span></p>
+										<p><span class="title-s">Role: </span> <span>I.M.C.A Student</span></p>
+										<p><span class="title-s">Current Year: </span> <span>5th Year</span></p>
+										<p><span class="title-s">Address: </span> <span>Bhavnagar, Gujarat, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Programming Skills</p>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="skills-category-card">
+												<div class="skills-cat-title">Frontend &amp; Mobile</div>
+												<div class="skills-badges-wrap">
+													<div class="skill-badge-premium">React.js</div>
+													<div class="skill-badge-premium">Flutter</div>
+													<div class="skill-badge-premium">Kotlin</div>
+													<div class="skill-badge-premium">JavaScript</div>
+												</div>
+											</div>
+											<div class="skills-category-card">
+												<div class="skills-cat-title">Backend &amp; Frameworks</div>
+												<div class="skills-badges-wrap">
+													<div class="skill-badge-premium">Node.js</div>
+													<div class="skill-badge-premium">Express.js</div>
+													<div class="skill-badge-premium">Django</div>
+													<div class="skill-badge-premium">Laravel</div>
+													<div class="skill-badge-premium">PHP</div>
+													<div class="skill-badge-premium">Python</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="skills-category-card">
+												<div class="skills-cat-title">Databases &amp; REST APIs</div>
+												<div class="skills-badges-wrap">
+													<div class="skill-badge-premium">MERN Stack</div>
+													<div class="skill-badge-premium">MongoDB</div>
+													<div class="skill-badge-premium">MySQL</div>
+													<div class="skill-badge-premium">Firebase</div>
+													<div class="skill-badge-premium">REST APIs</div>
+												</div>
+											</div>
+											<div class="skills-category-card">
+												<div class="skills-cat-title">Data Science &amp; Tools</div>
+												<div class="skills-badges-wrap">
+													<div class="skill-badge-premium">TensorFlow</div>
+													<div class="skill-badge-premium">Scikit-learn</div>
+													<div class="skill-badge-premium">Pandas</div>
+													<div class="skill-badge-premium">NumPy</div>
+													<div class="skill-badge-premium">Git &amp; GitHub</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hi! I'm Anand Yadav, a passionate software developer dedicated to building high-performance, user-centric web and mobile solutions. I am currently pursuing an Integrated Master of Computer Applications (IMCA) at Lok Jagruti Kendra University and have recently completed my 4th year.</p>
+
+								<p>I possess a strong technical foundation and hands-on knowledge in full-stack web and mobile engineering, specializing in the MERN Stack, Flutter development, Python/Django, and PHP/Laravel. I am highly passionate about engineering scalable, responsive applications characterized by stunning modern UI/UX, robust security, and highly efficient backend database architectures.</p>
+
+								<p>I thrive on turning complex logic into elegant solutions, writing clean maintainable code, and utilizing modern workflows to deliver products that amaze clients and recruiters alike.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">	
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Gujarati</span></li>
+									<li class="d-flex"><span>Other Stacks:</span> <span>TensorFlow, Scikit-learn, REST APIs</span></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="8">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/anandyadav07" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+				<div class="col-md-12">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-Present</span>
+    					<h2>Integrated Master of Computer Applications (I.M.C.A)</h2>
+    					<span class="position">Lok Jagruti Kendra University</span>
+    					<p class="mt-4">Currently in my final year of the Integrated MCA program, having successfully completed my 4th year. Deepening knowledge in MERN Stack web apps, Flutter mobile apps, database design, and cloud workflows while maintaining a high academic standing with first-class distinction grades.</p>
+    				</div>
+				</div>
+			</div>
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">March 2022</span>
+    					<h2>Higher Secondary School (HSC)</h2>
+    					<span class="position">Christ School</span>
+    					<p class="mt-4">Completed general higher secondary education with a strong focus on analytical sciences and mathematics. Grade: First class.</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">March 2020</span>
+    					<h2>Secondary School (SSC)</h2>
+    					<span class="position">Christ School</span>
+    					<p class="mt-4">Completed primary secondary school certificate. Grade: First class.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="media/Anand Yadav CV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are my key software engineering and web development projects, built using frameworks like .NET, Django, Laravel, and PHP.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Meettomb/HealthConnect" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Meettomb/HealthConnect">Online Healthcare Platform</a></h3>
+				<B><span class="position">APRIL 2025</span></B>
+                <p>A secure and reliable online healthcare platform built with .NET, offering doctor consultations and medicine delivery right to your doorstep.</p>
+                <div class="tag-container">
+                  <span class="badge-tech">.NET</span>
+                  <span class="badge-tech">SQL Server</span>
+                  <span class="badge-tech">C#</span>
+                  <span class="badge-tech">Web API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Anandkumar9825/E-Commerce-Website-Django-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Anandkumar9825/E-Commerce-Website-Django-Project">E-Commerce Website</a></h3>
+                <B><span class="position">SEPTEMBER 2024</span></B>
+				<p>A robust e-commerce website developed using the Django framework.</p>
+                <div class="tag-container">
+                  <span class="badge-tech">Django</span>
+                  <span class="badge-tech">Python</span>
+                  <span class="badge-tech">SQLite</span>
+                  <span class="badge-tech">HTML/CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">PetCare Service Platform for MBA Students</a></h3>
+                <B><span class="position">MARCH 2024</span></B>
+				<p>Online platform designed for providing pet-related services, developed using the Laravel
+				framework. This project is specifically created for MBA students.</p>
+                <div class="tag-container">
+                  <span class="badge-tech">Laravel</span>
+                  <span class="badge-tech">PHP</span>
+                  <span class="badge-tech">MySQL</span>
+                  <span class="badge-tech">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Anandkumar9825/Luxury-Car-Booking-System-Laravel-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Anandkumar9825/Luxury-Car-Booking-System-Laravel-Project">Luxury Car Booking System </a></h3>
+				  <B><span class="position">FEBRUARY 2024</span></B> 
+				  <p>The Luxury Car Booking System is a web application developed using the Laravel framework,
+					designed to provide a seamless online platform for users to book luxury cars.</p>
+                  <div class="tag-container">
+                    <span class="badge-tech">Laravel</span>
+                    <span class="badge-tech">PHP</span>
+                    <span class="badge-tech">MySQL</span>
+                    <span class="badge-tech">Tailwind</span>
+                  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Anandkumar9825/Airline-Ticket-Booking-Platform-PHP-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Anandkumar9825/Airline-Ticket-Booking-Platform-PHP-Project">Airline Ticket Booking Platform</a></h3>
+				  <B><span class="position">AUGUST 2023</span></B> 
+				  <p>The Online Flight Booking System is a web-based application developed using PHP and MySQL,
+					designed to facilitate the booking of airline tickets</p>
+                  <div class="tag-container">
+                    <span class="badge-tech">PHP</span>
+                    <span class="badge-tech">MySQL</span>
+                    <span class="badge-tech">HTML5</span>
+                    <span class="badge-tech">jQuery</span>
+                  </div>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="8">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="17">0</strong>
+                <span>Courses Certificates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4>Eager to learn and innovate—see my latest software projects and experiments on GitHub.</h4>
+						<br>
+						<p><a href="https://github.com/Anandkumar9825" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bhavnagar, Gujarat, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://9081505659">+91 9081505659</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:work.anandy07@gmail.com">work.anandy07@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="media/Anand Yadav CV.pdf">My Resume</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-8 ftco-animate">
+					<div class="contact-form-container text-center">
+						<h2>Have a<span> Question?</span></h2>
+						<p class="form-subtitle">Fill out the form below to reach out to me directly. I will get back to you as soon as possible!</p>
+						
+						<form id="portfolio-contact-form" action="#" method="POST">
+							<div class="row text-left">
+								<div class="col-md-6">
+									<div class="contact-form-group">
+										<label for="form-name">Name</label>
+										<input type="text" id="form-name" name="name" class="contact-form-control" placeholder="Your Name" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-form-group">
+										<label for="form-email">Email</label>
+										<input type="email" id="form-email" name="email" class="contact-form-control" placeholder="Your Email Address" required>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="contact-form-group">
+										<label for="form-query">Query</label>
+										<textarea id="form-query" name="query" class="contact-form-control" placeholder="Write your question or proposal here..." required></textarea>
+									</div>
+								</div>
+								<div class="col-md-12 text-center mt-3">
+									<button type="submit" class="btn btn-primary btn-form-submit py-3 px-5">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Custom Success Modal & Backdrop -->
+			<div class="success-modal-backdrop" id="form-modal-backdrop"></div>
+			<div class="success-modal" id="form-success-modal">
+				<div class="success-icon">
+					<span class="icon-paper-plane"></span>
+				</div>
+				<h3>Message Sent!</h3>
+				<p>Thank you for reaching out. Anand Yadav will get back to you shortly at the email address provided.</p>
+				<button class="btn btn-primary py-2 px-4" id="close-modal-btn" style="padding: 10px 30px !important;">Close</button>
+			</div>
+
+			<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const contactForm = document.getElementById('portfolio-contact-form');
+				const backdrop = document.getElementById('form-modal-backdrop');
+				const modal = document.getElementById('form-success-modal');
+				const closeBtn = document.getElementById('close-modal-btn');
+
+				if (contactForm) {
+					contactForm.addEventListener('submit', function(e) {
+						e.preventDefault();
+						
+						// Show sending state on the button
+						const submitBtn = contactForm.querySelector('.btn-form-submit');
+						const originalText = submitBtn.textContent;
+						submitBtn.textContent = 'Sending Message...';
+						submitBtn.disabled = true;
+
+						// Simulate network latency of 1.2 seconds for professional feedback
+						setTimeout(function() {
+							// Reset form
+							contactForm.reset();
+							submitBtn.textContent = originalText;
+							submitBtn.disabled = false;
+
+							// Display success modal
+							backdrop.style.display = 'block';
+							modal.style.display = 'block';
+							setTimeout(function() {
+								modal.classList.add('show');
+							}, 50);
+						}, 1200);
+					});
+				}
+
+				if (closeBtn) {
+					closeBtn.addEventListener('click', closeModal);
+				}
+				if (backdrop) {
+					backdrop.addEventListener('click', closeModal);
+				}
+
+				function closeModal() {
+					modal.classList.remove('show');
+					setTimeout(function() {
+						modal.style.display = 'none';
+						backdrop.style.display = 'none';
+					}, 300);
+				}
+			});
+			</script>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Anandkumar9825" title="GitHub"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/anandyadav07" title="LinkedIn"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://wa.me/9081505659" title="WhatsApp"><span class="icon-whatsapp"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights Reserved.<br>
+			Designed and Developed By Anand Yadav.</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
